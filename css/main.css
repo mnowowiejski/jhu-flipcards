@@ -1,0 +1,234 @@
+@import url('https://fonts.googleapis.com/css?family=Balthazar|Crimson+Text|Lusitana|Montserrat|Open+Sans|Oswald|Raleway|Roboto');
+
+/*----------------------------------------------------------------------------//
+//---------------------------------- Cards -----------------------------------//
+//----------------------------------------------------------------------------*/
+.wiley-flip-cards {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  font-family: 'Roboto', sans-serif;
+  padding: 3em;
+}
+.wiley-flip-card {
+  -webkit-perspective: 1000px;
+          perspective: 1000px;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  text-align: center;
+}
+.wiley-flip-card.flipped .wiley-flip-card-front {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+}
+.wiley-flip-card.flipped .wiley-flip-card-back {
+  -webkit-transform: rotateY(0deg);
+          transform: rotateY(0deg);
+}
+.wiley-flip-card {
+  margin:1em;
+  position: relative;
+  width: 250px;
+  height: 250px;
+  -webkit-transition: all 0.6s ease;
+  transition: all 0.6s ease;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  cursor:pointer;
+}
+.wiley-flip-card-front,
+.wiley-flip-card-back {
+  position: absolute;
+  background: #666;
+  top: 0;
+  left: 0;
+  width: 250px;
+  height: 250px;
+  padding: 0.3em;
+  border-radius: 5px;
+  color: white;
+  box-shadow: 0 10px 15px 0 rgba(0, 0, 0, 0.3), 0 7px 7px 0 rgba(0, 0, 0, 0.15);
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  -webkit-transition: 0.6s;
+  transition: 0.6s;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+}
+.wiley-flip-card-front {
+  z-index: 2;
+  -webkit-transform: rotateY(0deg);
+          transform: rotateY(0deg);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 2.5em;
+  line-height: 1.5em;
+}
+.wiley-flip-card-front:hover {
+  box-shadow: 0 15px 20px 0 rgba(0, 0, 0, 0.3), 0 12px 12px 0 rgba(0, 0, 0, 0.15);
+  margin-top: -0.1em;
+}
+.wiley-flip-card-back {
+  -webkit-transform: rotateY(-180deg);
+          transform: rotateY(-180deg);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 1.5em;
+  line-height: 1.5em;
+}
+
+/*----------------------------------------------------------------------------//
+//-------------------------- Specific School Styles --------------------------//
+//----------------------------------------------------------------------------*/
+.wiley-flip-card-front.amu,
+.wiley-flip-card-back.amu {
+  background-color: #004FA3;
+  color: #FFF;
+  font-family: 'Crimson Text', serif;
+}
+.wiley-flip-card-front.ant,
+.wiley-flip-card-back.ant {
+  background-color: #003819;
+  color: #FFF;
+  font-family: 'Arial', sans-serif;
+}
+.wiley-flip-card-front.cua,
+.wiley-flip-card-back.cua {
+  background-color: #0054a4;
+  color: #FFF;
+  font-family: 'Arial', sans-serif;
+}
+.wiley-flip-card-front.cor,
+.wiley-flip-card-back.cor {
+  background-color: #FFB500;
+  color: #000;
+  font-family: 'Montserrat', sans-serif;
+}
+.wiley-flip-card-front.del,
+.wiley-flip-card-back.del {
+  background-color: #00539f;
+  color: #FFF;
+  font-family: 'Arial', sans-serif;
+}
+.wiley-flip-card-front.gma,
+.wiley-flip-card-back.gma {
+  background-color: #006633;
+  color: #FFF;
+  font-family: 'Open Sans', sans-serif;
+}
+.wiley-flip-card-front.gtnsmsf,
+.wiley-flip-card-back.gtnsmsf {
+  background-color: #164375;
+  color: #FFF;
+  font-family: 'Lusitana', serif;
+}
+.wiley-flip-card-front.jhucar,
+.wiley-flip-card-back.jhucar {
+  background-color: #3478B6;
+  color: #FFF;
+  font-family: 'Oswald', sans-serif;
+}
+.wiley-flip-card-front.loy,
+.wiley-flip-card-back.loy {
+  background-color: #660000;
+  color: #FFF;
+  font-family: 'Balthazar', serif;
+}
+.wiley-flip-card-front.mht,
+.wiley-flip-card-back.mht {
+  background-color: #00703c;
+  color: #FFF;
+  font-family: 'Crimson Text', serif;
+}
+.wiley-flip-card-front.ntu,
+.wiley-flip-card-back.ntu {
+  background-color: #FFF;
+  border: 3px solid #E8005A;
+  color: #004877;
+  font-family: 'Open Sans', serif;
+}
+.wiley-flip-card-front.oll,
+.wiley-flip-card-back.oll {
+  background-color: #005481;
+  color: #FFF;
+  font-family: 'Oswald', sans-serif;
+}
+.wiley-flip-card-front.prdbb,
+.wiley-flip-card-back.prdbb {
+  background-color: #000;
+  color: #FFF;
+  font-family: 'Oswald', sans-serif;
+}
+.wiley-flip-card-front.qns,
+.wiley-flip-card-back.qns {
+  background-color: #11335d;
+  color: #FFF;
+  font-family: 'Arial', sans-serif;
+}
+.wiley-flip-card-front.scr,
+.wiley-flip-card-back.scr {
+  background-color: #3b3365;
+  color: #FFF;
+  font-family: 'Open Sans', sans-serif;
+}
+.wiley-flip-card-front.shu,
+.wiley-flip-card-back.shu {
+  background-color: #990000;
+  color: #FFF;
+  font-family: 'Georgia', serif;
+}
+.wiley-flip-card-front.stm,
+.wiley-flip-card-back.stm {
+  background-color: #c8102e;
+  color: #FFF;
+  font-family: 'Crimson Text', serif;
+}
+.wiley-flip-card-front.umn,
+.wiley-flip-card-back.umn {
+  background-color: #ffd75f;
+  color: #7a0019;
+  font-family: 'Raleway', sans-serif;
+}
+.wiley-flip-card-front.uob,
+.wiley-flip-card-back.uob {
+  background-color: #0a303e;
+  color: #ffbc37;
+  font-family: 'Helvetica', sans-serif;
+}
+.wiley-flip-card-front.usm,
+.wiley-flip-card-back.usm {
+  background-color: #002a5c;
+  color: #FFF;
+  font-family: 'Georgia', serif;
+}
+.wiley-flip-card-front.wdn,
+.wiley-flip-card-back.wdn {
+  background-color: #0072bc;
+  color: #FFF;
+  font-family: 'Crimson Text', serif;
+}
+.wiley-flip-card-front.wesgen,
+.wiley-flip-card-back.wesgen {
+  background-color: #000;
+  color: #FFF;
+  font-family: 'Open Sans', sans-serif;
+}
