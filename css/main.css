@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Balthazar|Crimson+Text|Lusitana|Montserrat|Open+Sans|Oswald|Raleway|Roboto');
-body{color:red;}
+body{
+    background-color: darkgray;
+    color:red;}
 
 
 /*----------------------------------------------------------------------------//
